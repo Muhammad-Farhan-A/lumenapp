@@ -18,7 +18,7 @@ $router->get('/', function () use ($router) {
 });
 
 $router->post('/data', function () use ($router) {
-    $results = app('db')->select("SELECT * FROM pengguna");
+    $results = app('db')->select("SELECT * FROM users");
     return response()->json($results);
 });
 
